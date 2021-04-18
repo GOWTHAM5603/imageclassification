@@ -29,4 +29,4 @@ model.add(Dense(2, activation = 'softmax'))
 
 model.compile(optimizer = 'adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
-model.fit(x, y, epochs=5, validation_split=0.1)
+model.fit(x, y, epochs=5, validation_split=0.1, callbacks=[tensorboard])
